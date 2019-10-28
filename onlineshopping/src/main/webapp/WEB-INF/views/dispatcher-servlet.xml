@@ -18,7 +18,7 @@
 
  <context:annotation-config></context:annotation-config>
  <context:component-scan base-package="net.hri.onlineshopping.controller" />
-  
+  <context:component-scan base-package="net.hri.Shopping_backend.daoimpl" />
    
         
  <mvc:resources mapping="/resources/**" location="/resources/"  cache-period="31556926"/>    
