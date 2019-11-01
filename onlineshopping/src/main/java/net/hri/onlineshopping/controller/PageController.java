@@ -22,7 +22,7 @@ public class PageController {
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
 		// passing the list of categories
-		mv.addObject("categories", categoryDAO.list());
+     	mv.addObject("categories",categoryDAO.list());
 
 		return mv;
 	}

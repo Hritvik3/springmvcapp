@@ -1,0 +1,9 @@
+2019-10-31 11:22:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+insert into Category (id, is_active, description, image_url, name) values (null, ?, ?, ?, ?) [42102-200]
+2019-10-31 11:29:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+insert into Category (id, is_active, description, image_url, name) values (null, ?, ?, ?, ?) [42102-200]
+2019-10-31 11:44:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+insert into Category (id, is_active, description, image_url, name) values (null, ?, ?, ?, ?) [42102-200]
