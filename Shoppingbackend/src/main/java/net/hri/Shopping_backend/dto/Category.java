@@ -8,8 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Category")
-
+@Table(name="CATEGORY")
 public class Category {
 
 	
@@ -33,12 +32,11 @@ public class Category {
 	
 	
 	
+	
 	@Override
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + ", description=" + description + ", imageURL=" + imageURL
-				+ ", active=" + active + ", getId()=" + getId() + ", getName()=" + getName() + ", getDescription()="
-				+ getDescription() + ", getImageURL()=" + getImageURL() + ", isActive()=" + isActive() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+				+ ", active=" + active + "]";
 	}
 	public int getId() {
 		return id;

@@ -85,6 +85,10 @@
 
 		<script src="${js}/jquery-1.10.2.js"></script>
 		<script src="${js}/bootstrap.js"></script>
+        <!-- datatable plugin -->
+        <script src="${js}/jquery.dataTables.js"></script>
+        
+
 
 		<!-- self coded js -->
 		<script src="${js}/myapp.js"></script>
