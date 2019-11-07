@@ -23,6 +23,11 @@
 <meta name="author" content="">
 
 <title>Online Shopping-${title}</title>
+<script type="text/javascript">
+	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}';
+</script>
+
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.css" rel="stylesheet">
@@ -30,13 +35,14 @@
 <!-- Bootstrap readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
+<!-- Bootstrap datatables -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 <!-- link href="<c:url value="/resources/css/myapp.css"/>"  rel="stylesheet">-->
 
-<script type="text/javascript">
-	window.menu = '${title}';
-</script>
 
 
 </head>
@@ -66,12 +72,18 @@
 			<c:if test="${userClickContact==true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
-                
-                <!-- load only when user clicks all products -->
-			<c:if test="${userClickAllProducts==true  or userClickCategoryProducts==true}">
+
+			<!-- load only when user clicks all products -->
+			<c:if
+				test="${userClickAllProducts==true  or userClickCategoryProducts==true}">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 
+			<!-- load only when user clicks show products -->
+			<c:if
+				test="${userClickShowProduct==true}">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
 
 
 
@@ -85,9 +97,11 @@
 
 		<script src="${js}/jquery-1.10.2.js"></script>
 		<script src="${js}/bootstrap.js"></script>
-        <!-- datatable plugin -->
-        <script src="${js}/jquery.dataTables.js"></script>
-        
+		<!-- datatable plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		<!-- datatable bootstrap script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
 
 
 		<!-- self coded js -->
